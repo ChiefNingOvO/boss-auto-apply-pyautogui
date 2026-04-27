@@ -1,0 +1,29 @@
+{
+  "skill_name": "boss-auto-apply",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Boss 已打开，帮我投递 2 个测试开发工程师岗位，话术偏简洁。",
+      "expected_output": "The agent uses cli-anything-pyautogui to inspect Boss, searches for 测试开发工程师, completes up to two two-step 立即沟通 flows, sends one concise HR message per completed application, and reports completed/failed counts.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "帮我在 Boss 搜 Java 测试开发，投递 1 家，强调我会自动化测试和接口测试。",
+      "expected_output": "The agent searches for Java 测试开发, applies to one relevant job, sends exactly one customized message mentioning automation testing and API testing only if appropriate, and reports the result.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Boss 页面卡住了，继续帮我完成 3 个软件测试相关岗位投递，失败的跳过。",
+      "expected_output": "The agent inspects the current stuck Boss page, attempts recovery with screenshots/clicks/scrolling as appropriate, skips unhandleable blocked attempts as failures, completes up to three software testing related applications, and reports what happened.",
+      "files": []
+    },
+    {
+      "id": 4,
+      "prompt": "继续帮我投递 2 个 AI 大模型应用开发岗位，不要投之前沟通过的公司，如果当前页都投过就往下滑。",
+      "expected_output": "The agent tracks completed and previously contacted jobs, skips any job showing signs of prior communication, scrolls the job list when all visible results are exhausted, returns to the job page after each completed chat, and sends one JD-grounded message for each new AI large-model application.",
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+include README.md
+include LICENSE
+include THIRD_PARTY_NOTICES.md
+include docs/*.md
+include licenses/*.txt
+recursive-include skills *.md *.json
+recursive-include scripts *.ps1 *.sh
