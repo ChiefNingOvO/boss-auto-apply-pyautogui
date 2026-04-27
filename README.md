@@ -201,38 +201,6 @@ skill 的人工评估用例在：
 skills/boss-auto-apply/evals/evals.json
 ```
 
-## 发布到 GitHub
-
-发布前先检查合规文件：
-
-```powershell
-Get-ChildItem LICENSE, THIRD_PARTY_NOTICES.md, licenses\PyAutoGUI-LICENSE.txt, docs\LEGAL_CHECKLIST.md
-```
-
-初始化仓库：
-
-```powershell
-git init
-git add .
-git commit -m "Initial boss auto apply pyautogui release"
-```
-
-推送到 GitHub：
-
-```powershell
-git branch -M main
-git remote add origin https://github.com/<your-name>/<your-repo>.git
-git push -u origin main
-```
-
-建议 GitHub 仓库描述写成：
-
-```text
-CLI-Anything PyAutoGUI harness plus a Codex skill for user-authorized Boss Zhipin job application automation. Unofficial; depends on PyAutoGUI.
-```
-
-不要在项目名称、描述或 README 中暗示这是 PyAutoGUI 官方项目或 Boss 直聘官方工具。
-
 ## 已知限制
 
 - 自动化依赖屏幕坐标和当前 UI 状态，页面布局变化会影响成功率。
